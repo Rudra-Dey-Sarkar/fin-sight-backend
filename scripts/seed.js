@@ -1,7 +1,7 @@
-const bcrypt = require("bcryptjs");
-const env = require("../config/env");
-const { closePool, query } = require("../config/db");
-const { ROLES } = require("../constants/roles");
+import bcrypt from "bcryptjs";
+import env from "../src/config/env.js";
+import { closePool, query } from "../src/config/db.js";
+import { ROLES } from "../src/constants/roles.js";
 
 const SAMPLE_RECORDS = [
   { amount: 4200, type: "income", category: "Salary", date: "2026-04-01", notes: "Monthly salary" },

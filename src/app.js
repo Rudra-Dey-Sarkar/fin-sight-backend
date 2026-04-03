@@ -1,12 +1,12 @@
-const express = require("express");
-const cors = require("cors");
-const env = require("../config/env");
-const authRoutes = require("../modules/auth/auth.routes");
-const userRoutes = require("../modules/user/user.routes");
-const recordRoutes = require("../modules/record/record.routes");
-const dashboardRoutes = require("../modules/dashboard/dashboard.routes");
-const errorHandler = require("../middlewares/error.middleware");
-const { createError } = require("../utils/api-response");
+import express from "express";
+import cors from "cors";
+import env from "./config/env.js";
+import authRoutes from "./modules/auth/auth.routes.js";
+import userRoutes from "./modules/user/user.routes.js";
+import recordRoutes from "./modules/record/record.routes.js";
+import dashboardRoutes from "./modules/dashboard/dashboard.routes.js";
+import errorHandler from "./middlewares/error.middleware.js";
+import { createError } from "./utils/api-response.js";
 
 const app = express();
 
@@ -42,4 +42,4 @@ app.use((req, res, next) => {
 
 app.use(errorHandler);
 
-module.exports = app;
+export default app;

@@ -2,6 +2,7 @@
   "name": "fin-sight-backend",
   "version": "1.0.0",
   "description": "Finance dashboard backend with role-based access control and analytics.",
+  "type": "module",
   "main": "src/server.js",
   "scripts": {
     "start": "node src/server.js",

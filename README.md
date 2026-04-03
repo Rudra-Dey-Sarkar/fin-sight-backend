@@ -15,17 +15,20 @@ Fin-Sight Backend is a Node.js and Express API for a finance dashboard system. I
 
 ```text
 fin-sight-backend/
-├── access-control/
-├── config/
-├── constants/
-├── middlewares/
-├── modules/
-│   ├── auth/
-│   ├── dashboard/
-│   ├── record/
-│   └── user/
 ├── scripts/
 ├── src/
+│   ├── access-control/
+│   ├── config/
+│   ├── constants/
+│   ├── middlewares/
+│   ├── modules/
+│   │   ├── auth/
+│   │   ├── dashboard/
+│   │   ├── record/
+│   │   └── user/
+│   ├── utils/
+│   ├── app.js
+│   └── server.js
 ├── tests/
 ├── .env
 ├── .env.example

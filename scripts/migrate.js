@@ -1,5 +1,5 @@
-const { closePool, query } = require("../config/db");
-const { ROLE_VALUES } = require("../constants/roles");
+import { closePool, query } from "../src/config/db.js";
+import { ROLE_VALUES } from "../src/constants/roles.js";
 
 const USER_STATUSES = ["active", "inactive"];
 
