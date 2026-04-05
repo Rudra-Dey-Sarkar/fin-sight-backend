@@ -168,6 +168,12 @@ Supported query parameters for `GET /api/records`:
 - `page`
 - `limit`
 
+Example:
+
+```text
+/api/records?dateFrom=2026-04-01&dateTo=2026-04-30&type=income&category=Salary&page=1&limit=10
+```
+
 ### Dashboard
 
 - `GET /api/dashboard/summary`
