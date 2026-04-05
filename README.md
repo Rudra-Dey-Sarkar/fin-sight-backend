@@ -209,5 +209,4 @@ These values come from `.env` and can be changed before running the seed script.
 - Viewer access is limited to dashboard summaries.
 - Analysts can inspect records but cannot create, update, or delete them.
 - Admins are the only users allowed to manage users or mutate records.
-- Automated Jest tests are intentionally deferred, but the code is structured for easy addition later.
 - The permission provider is asynchronous so the permission source can move to Redis or a database later without changing middleware logic.
